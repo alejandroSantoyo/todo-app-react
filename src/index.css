@@ -1,13 +1,102 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(93, 158, 185);
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  color: #fff;
+}
+
+p {
+  font-size: large;
+}
+
+.create-instruction {
+  color: rgb(251, 196, 111);
+  font-weight: bold;
+}
+
+.complete-instruction {
+  color: rgb(102, 214, 121);
+}
+
+.remove-instruction {
+  color: rgb(53,92,108);
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+}
+
+.todo-input {
+  width: 80%;
+  border: none;
+  padding: 4px;
+  border-radius: 2px;
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.add-todo–button {
+  margin-left: 6px;
+  background-color: rgb(53,92,108);
+  color: rgb(93, 158, 185);
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+.list {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+.list li {
+  list-style-type: none;
+  background-color: rgb(123, 181, 199);
+  border: rgb(53,92,108) solid 2px;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.list li:hover {
+  background-color: rgba(53,92,108, 0.3);
+  cursor: pointer;
+}
+
+.list li:hover i{
+  color: #fff;
+}
+
+.list span.item-text{
+  color: #fff;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+}
+
+.list i {
+  color: rgb(53,92,108);
+  text-align: right;
+}
+
+.hidden {
+  display: none;
+}
+
+.list i.completed{
+  width: 24px;
+  font-size: 24px;
+  margin-right: 8px;
 }
